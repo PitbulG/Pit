@@ -2,6 +2,7 @@ import smtplib as root
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
+
 def send_mail():
     login = raw_input('Vvedite vashy pochty')
     password = raw_input('vvedite porol')
@@ -21,15 +22,11 @@ def send_mail():
     server.login(login, password)
     server.sendmail(login, toaddr, msg.as_string())
 
+
 def main():
     send_main()
-    
+
+
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
 
